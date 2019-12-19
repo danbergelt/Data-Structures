@@ -4,7 +4,6 @@
 # from dll_queue import Queue
 
 
-
 class BinarySearchTree:
     def __init__(self, value):
         self.value = value
@@ -80,16 +79,39 @@ class BinarySearchTree:
     # Hint:  Use a recursive, depth first traversal
 
     def in_order_print(self, node):
-        pass
+        if node:
+            self.in_order_print(node.left)
+            print(node.value)
+            self.in_order_print(node.right)
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
+
     def bft_print(self, node):
+      # make a queue
+      # put root in queue
+      # while queue not empty
+      #     pop root out of queue
+      #     DO THE THING HERE
+      #     if left
+      #       add left to queue
+      #     if right
+      #       add right to queue
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
     def dft_print(self, node):
+      # make a stack
+      # put root in stack
+      # while stack not empty
+      #    pop root ouf ot stack
+      #    DO THE THING HERE
+      #    if left
+      #        add left to stack
+      #    if right
+      #        add right to stack
+      #
         pass
 
     # STRETCH Goals -------------------------
